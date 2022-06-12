@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tete abrir esse site em vários dispositivos diferentes ou simplesmete aumente e diminua do se navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir aúdios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/musica-para progama.mp3" type="audio/mpeg">
+        <source src="midia/musica-para progama.ogg" type="audio/ogg">
+        <source src="midia/musica-para progama.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="midia/musica-para progama.mp3"> aqui para baixar o arquivo mp3</a></p>
+       <!--<audio src="midia/musica-para progama.mp3" controls autoplay></audio> esse eu tambem posso usar para reproduzir o audio e é mais facio--> 
+    </audio>
+</body>
+</html>
